@@ -3,9 +3,10 @@
     <v-img :src="dog.image.url" height="200px"></v-img>
 
     <v-card-title>{{ dog.name }}</v-card-title>
+    <v-divider></v-divider>
     <v-card-text class="mb-10">
       <v-chip
-        class="ma-2"
+        class="ma-2 ml-0"
         color="secondary"
         v-for="temp in dog.temperament.split(',')"
         :key="temp"
